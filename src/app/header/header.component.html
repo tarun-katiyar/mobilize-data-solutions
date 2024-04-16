@@ -1,0 +1,29 @@
+<div class="maintopbar">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand"><img src="../../assets/logo.jpeg" alt="">MOBILIZE DATA SOLUTION</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn"
+                            [ngClass]="activeTab=='business' ? 'btn-primary' : 'btn-secondary'"
+                            (click)="getToggle('business')">BUSINESS</button>
+                        <button type="button" class="btn"
+                            [ngClass]="activeTab=='private' ? 'btn-primary' : 'btn-secondary'"
+                            (click)="getToggle('private')"> PRIVATE</button>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <i class="material-icons text-white mr-3">g_translate</i>
+                <button class="btn loginbtn my-2 my-sm-0" type="button">LOGIN</button>
+            </form>
+        </div>
+    </nav>
+</div>

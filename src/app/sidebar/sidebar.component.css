@@ -1,0 +1,41 @@
+.mainsidebar {
+    background-color: #1f1f1f;
+    width: 90px;
+    text-align: center;
+    height: calc(100vh - 56px);
+  }
+  .mainsidebar ul {
+    padding: 0;
+    margin: 0;
+    width: 90px;
+
+    list-style: none;
+  }
+  .mainsidebar ul li
+  {
+      padding-top: 20px;
+  }
+  .mainsidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mainsidebar ul li a .menuname {
+    font-size: 12px;
+  }
+  .mainsidebar ul li a .sideicon,
+  .mainsidebar ul li a .sideicon i {
+    position: relative;
+  }
+  .mainsidebar ul li a .sideicon.active::before {
+      background: #f24304;
+      width: 45px;
+      height: 25px;
+      position: absolute;
+      content: "";
+      z-index: 0;
+      left: 24px;
+      top: 0px;
+      border-radius: 50px;
+  }
+  
