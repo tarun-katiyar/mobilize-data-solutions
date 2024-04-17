@@ -2,7 +2,7 @@
     background-color: #1f1f1f;
     width: 90px;
     text-align: center;
-    height: calc(100vh - 56px);
+    min-height: calc(100vh - 56px);
   }
   .mainsidebar ul {
     padding: 0;
