@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+.page_mainsec {
+    padding: 40px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+body{
+    overflow: hidden;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #504f4fec;
+    width: 5px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #d6d4d4;
+    width: 10px;
+
+}
