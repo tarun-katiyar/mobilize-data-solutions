@@ -1,0 +1,39 @@
+<div class="mainsection d-flex">
+    <div class="mainsidebar">
+        <ul>
+            <li>
+                <a (click)="goToRoute('')">
+                    <div class="sideicon"  [ngClass]="activeTab=='' ? 'active' : ''"><i class="material-icons">home</i></div>
+                    <div class="menuname">Home</div>
+                </a>
+            </li>
+            <li>
+                <a (click)="goToRoute('catalouge')">
+                    <div class="sideicon"  [ngClass]="activeTab=='catalouge' ? 'active' : ''"><i class="material-icons">menu_book</i></div>
+                    <div class="menuname">Catalogue</div>
+                </a>
+            </li>
+            <li>
+                <a (click)="goToRoute('subscription')">
+                    <div class="sideicon"  [ngClass]="activeTab=='subscription' ? 'active' : ''"><i class="material-icons">redeem</i></div>
+                    <div class="menuname">My Subscriptions</div>
+                </a>
+            </li>
+            <li>
+                <a (click)="goToRoute('support')">
+                    <div class="sideicon"  [ngClass]="activeTab=='support' ? 'active' : ''"><i class="material-icons">help</i></div>
+                    <div class="menuname">Support</div>
+                </a>
+            </li>
+            <li>
+                <a (click)="goToRoute('information')">
+                    <div class="sideicon"  [ngClass]="activeTab=='information' ? 'active' : ''"><i class="material-icons">info</i></div>
+                    <div class="menuname">Information</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="content_section">
+        <router-outlet></router-outlet>
+    </div>
+</div>
