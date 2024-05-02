@@ -2,12 +2,17 @@
   background: black;
   padding: 20px 0;
   margin-left: 90px;
+  /* margin-left: 90px;
+  position: fixed;
+  bottom: 0;
+  width: 100%; */
 }
 .mainfoot_sec .footmneu h5 {
   color: #fff;
 }
 .mainfoot_sec .footmneu ul {
   padding: 0;
+  margin-bottom: 0px;
   list-style: none;
 }
 .mainfoot_sec .footmneu ul li{
