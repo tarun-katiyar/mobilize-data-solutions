@@ -16,3 +16,12 @@
   background-color: #d6d4d4;
   width: 8px;
 }
+.mini-tab-open{
+background-color: aquamarine;
+}
+.mini-tab-close{
+background-color: aqua;
+}
+.mini-tab-open{
+  margin-left: 258px;
+}
