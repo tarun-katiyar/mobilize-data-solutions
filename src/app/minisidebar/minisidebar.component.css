@@ -23,6 +23,7 @@
     transition: all 0.5s;
     display: inline-block;
 }
+.minisidebar ul li a.active,
 .minisidebar ul li a:hover{
     background-color: #f24304;
     border-radius: 50px;

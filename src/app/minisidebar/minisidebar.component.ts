@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { SharedService } from '../../shared.service';
 
 @Component({
   selector: 'app-minisidebar',
@@ -6,13 +7,19 @@ import { Component, Input } from '@angular/core';
   styleUrl: './minisidebar.component.css'
 })
 export class MinisidebarComponent {
- 
+
   @Input() activeTab: any;
-  constructor(){
+  activeTabMini: string = '';
+  constructor(private _sharedService: SharedService) {
 
   }
 
-  ngOnInit(){
+  ngOnInit() {
+  }
+
+  goToRoute(location: string) {
+    this._sharedService.goToRoute(location);
+    this.activeTabMini=location;
   }
 
 

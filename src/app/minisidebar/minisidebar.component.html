@@ -1,20 +1,20 @@
 <div class="minisidebar" *ngIf="activeTab==''">
     <ul>
-        <li><a href="javascript:void()">Designers</a></li>
-        <li><a href="javascript:void()">Developers</a></li>
+        <li><a [ngClass]="activeTabMini=='designers' ? 'active' : ''" (click)="goToRoute('designers')">Designers</a></li>
+        <li><a [ngClass]="activeTabMini=='developers' ? 'active' : ''" (click)="goToRoute('developers')">Developers</a></li>
     </ul>
 </div>
 
 <div class="minisidebar" *ngIf="activeTab=='catalouge'">
     <ul>
-        <li><a href="javascript:void()">Developers prerequisite</a></li>
-        <li><a href="javascript:void()">Artifactory</a></li>
+        <li><a [ngClass]="activeTabMini=='catalouge/prerequisite' ? 'active' : ''" (click)="goToRoute('catalouge/prerequisite')">Prerequisite</a></li>
+        <li><a  [ngClass]="activeTabMini=='catalouge/artifactory' ? 'active' : ''" (click)="goToRoute('catalouge/artifactory')">Artifactory</a></li>
     </ul>
 </div>
 
 <div class="minisidebar" *ngIf="activeTab=='subscription'">
     <ul>
-        <li><a href="javascript:void()">Angular</a></li>
-        <li><a href="javascript:void()">React</a></li>
+        <li><a  [ngClass]="activeTabMini=='subscription/angular' ? 'active' : ''" (click)="goToRoute('subscription/angular')">Angular</a></li>
+        <li><a [ngClass]="activeTabMini=='subscription/react' ? 'active' : ''" (click)="goToRoute('subscription/react')">React</a></li>
     </ul>
 </div>

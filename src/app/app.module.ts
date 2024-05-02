@@ -12,6 +12,12 @@ import { SupportComponent } from './support/support.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { MinisidebarComponent } from './minisidebar/minisidebar.component';
+import { AngularComponent } from './angular/angular.component';
+import { ReactComponent } from './react/react.component';
+import { DevelopersComponent } from './developers/developers.component';
+import { DesignersComponent } from './designers/designers.component';
+import { PrerequisiteComponent } from './prerequisite/prerequisite.component';
+import { ArtifactoryComponent } from './artifactory/artifactory.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,13 @@ import { MinisidebarComponent } from './minisidebar/minisidebar.component';
     SupportComponent,
     HomeComponent,
     FooterComponent,
-    MinisidebarComponent
+    MinisidebarComponent,
+    AngularComponent,
+    ReactComponent,
+    DevelopersComponent,
+    DesignersComponent,
+    PrerequisiteComponent,
+    ArtifactoryComponent
   ],
   imports: [
     BrowserModule,
