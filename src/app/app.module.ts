@@ -11,6 +11,7 @@ import { SubscriptionComponent } from './subscription/subscription.component';
 import { SupportComponent } from './support/support.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { MinisidebarComponent } from './minisidebar/minisidebar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     SubscriptionComponent,
     SupportComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    MinisidebarComponent
   ],
   imports: [
     BrowserModule,
