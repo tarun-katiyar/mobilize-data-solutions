@@ -18,7 +18,6 @@ export class SidebarComponent {
   goToRoute(location: string) {
     this._router.navigate([location]);
     this.activeTab = location;
-
   }
 
 }
