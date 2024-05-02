@@ -11,4 +11,7 @@ export class SharedService {
   getCurrentRoute(): string {
     return this._router.url;
   }
+  goToRoute(location: string) {
+    this._router.navigate([location]);
+  }
 }
