@@ -15,7 +15,7 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
     let url = this._sharedService.getCurrentRoute();
-    if (url.includes('/')) {
+    if (url.includes('/') || url.includes('catalouge') || url.includes('subscription')) {
       this.isMinibar = true;
     }
 

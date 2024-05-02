@@ -15,7 +15,7 @@ export class SubscriptionComponent implements OnInit {
 
   ngOnInit() {
     let url = this._sharedService.getCurrentRoute();
-    if (url.includes('catalouge')) {
+    if (url.includes('subscription')) {
       this.isSubscription = true;
     }
 
