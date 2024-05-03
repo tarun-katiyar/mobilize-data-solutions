@@ -10,14 +10,29 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <div class="btn-group" role="group" aria-label="Basic example">
+                    <div class="container">
+                        <div class="switches-container">
+                            <input type="radio" id="switchMonthly" name="switchPlan" value="Monthly"
+                                checked="checked" />
+                            <input type="radio" id="switchYearly" name="switchPlan" value="Yearly" />
+                            <label for="switchMonthly">BUSINESS</label>
+                            <label for="switchYearly">PRIVATE</label>
+                            <div class="switch-wrapper">
+                                <div class="switch">
+                                    <div>BUSINESS</div>
+                                    <div>PRIVATE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="btn-group" role="group" aria-label="Basic example">
                         <button type="button" class="btn btn-sm"
                             [ngClass]="activeTab=='business' ? 'btn-primary ' : 'btn-secondary'"
                             (click)="getToggle('business')">BUSINESS</button>
                         <button type="button" class="btn btn-sm"
                             [ngClass]="activeTab=='private' ? 'btn-primary' : 'btn-secondary'"
                             (click)="getToggle('private')"> PRIVATE</button>
-                    </div>
+                    </div> -->
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
