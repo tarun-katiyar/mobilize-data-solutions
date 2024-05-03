@@ -43,4 +43,7 @@
       top: 0px;
       border-radius: 50px;
   }
+  .mainsidebar ul li a .sideicon.active i {
+    color:black
+}
   
