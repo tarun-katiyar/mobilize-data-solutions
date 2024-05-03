@@ -32,6 +32,7 @@
   .mainsidebar ul li a .sideicon i {
     position: relative;
   }
+  .mainsidebar ul li a .sideicon:hover::before,
   .mainsidebar ul li a .sideicon.active::before {
       background: #f24304;
       width: 45px;
@@ -43,4 +44,8 @@
       top: 0px;
       border-radius: 50px;
   }
+  .mainsidebar ul li a .sideicon:hover i,
+  .mainsidebar ul li a .sideicon.active i {
+    color:black
+}
   

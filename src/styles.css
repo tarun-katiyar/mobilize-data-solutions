@@ -23,3 +23,8 @@
 .mini-tab-open{
   margin-left: 258px;
 }
+.main_mini_box
+{
+  min-height: 70vh;
+  margin-left: 264px;
+}
